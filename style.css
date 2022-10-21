@@ -1,0 +1,491 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------------------------------------------1) Encabezado principal */
+.header {
+  width: 100%;
+  height: 616px;
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255),
+    rgba(247, 244, 59, 0.786)
+  );
+  /* #F7F43B */
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 17px;
+  background-color: #fefeea;
+  /* border: black 3px solid; */
+}
+
+.logo {
+  padding-top: 18px;
+  width: 75px;
+  height: 75px;
+}
+
+.contenedor-textos {
+  display: none;
+}
+
+.logo-menu {
+  width: 36px;
+  height: 32px;
+}
+/* /////Medias queries encabezado */
+
+@media (min-width: 769px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 769px) {
+  .logo {
+    padding-top: 0;
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 769px) {
+  .logo-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .contenedor-textos {
+    display: flex;
+    justify-content: center;
+    height: 84px;
+    padding-top: 62px;
+  }
+
+  @media (min-width: 769px) {
+    .textos-menu {
+      padding-right: 23px;
+      color: #000000;
+      font-size: 24px;
+      font-family: "Roboto";
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      padding: 0 80px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .textos-menu {
+      padding-right: 50px;
+    }
+  }
+}
+/* ---------------------------------------------------2) Texto y logo personal */
+.contenedor-bienvenida-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.texto-bienvenida {
+  line-height: 48px;
+  text-align: center;
+  font-size: 48px;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 70px;
+  padding-bottom: 58px;
+  padding-left: 42px;
+  padding-right: 42px;
+  /* flex-grow: 1; */
+}
+
+.logo-personal {
+  border-radius: 106px;
+  border: 5px solid #2c2c2c;
+  width: 200px;
+  height: 285px;
+}
+
+@media (min-width: 769px) {
+  .contenedor-bienvenida-logo {
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 769px) {
+  .texto-bienvenida {
+    width: 468px;
+    padding-top: 115px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .logo-personal {
+    width: 200px;
+    height: 310px;
+    margin-top: 131px;
+    margin-right: 84px;
+  }
+}
+/* @media (min-width: 1440px) {
+  .logo-personal {
+    margin-right: 200px;
+  }
+} */
+
+/* @media (min-width: 1440px) {
+  .texto-bienvenida {
+    width: 468px;
+    font-size: 70px;
+    line-height: 70px;
+  }
+} */
+
+/* ---------------------------------------------------Section 1 HOLA! SOY EZEQUIEL */
+.section-one {
+  height: 538px;
+  background-color: #141414;
+}
+.contenedor-titulo-parrafo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-section-one {
+  padding-top: 55px;
+  font-size: 32px;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+}
+
+.parrafo-section-one {
+  margin: 41px 32px 57px 32px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #fafafa;
+}
+.contenedor-img {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-flecha {
+  width: 90px;
+  height: 90px;
+}
+
+@media (min-width: 769px) {
+  .section-one {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 769px) {
+  .contenedor-titulo-parrafo {
+    justify-content: stretch;
+    align-items: flex-start;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: 769px) {
+  .titulo-section-one {
+    padding-top: 132px;
+    padding-left: 90px;
+  }
+}
+
+@media (min-width: 769px) {
+  .parrafo-section-one {
+    margin: 0;
+    padding-top: 28px;
+    padding-left: 90px;
+  }
+}
+
+@media (min-width: 769px) {
+  .contenedor-img {
+    align-items: center;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 769px) {
+  .logo-flecha {
+    transform: rotate(90deg);
+    width: 211px;
+    height: 211px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .parrafo-section-one {
+    margin: 0;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contenedor-img {
+    padding-left: 306px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .parrafo-section-one {
+    margin: 0;
+    padding-right: 301px;
+  }
+}
+/* ---------------------------------------------Section 2  MIS SERVICIOS */
+
+.section-two {
+  background-color: #fafafa;
+  height: 1375px;
+}
+
+.contenedor-titulo-h3 {
+  display: flex;
+  justify-content: center;
+}
+.titulo-mis-servicios {
+  font-size: 32px;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 69px;
+  padding-bottom: 48px;
+}
+
+.contenedor-cosas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-cosas {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  padding-top: 19px;
+  padding-bottom: 15px;
+}
+
+.computer {
+  width: 138px;
+  height: 128px;
+}
+
+.parrafo-cosas {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 0 57px 109px 57px;
+}
+
+@media (min-width: 769px) {
+  .section-two {
+    height: 604px;
+  }
+}
+
+@media (min-width: 769px) {
+  .contenedor-principal-cosas {
+    display: flex;
+  }
+}
+@media (min-width: 769px) {
+  .parrafo-cosas {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    padding: 0 57px 0px 57px;
+  }
+}
+
+/* -------------------------------------------Section 3 FORMULARIO */
+
+.section-formulario {
+  height: 660px;
+  background-color: #141414;
+  color: #fafafa;
+}
+
+.contenedor-titulo-formulario {
+  display: flex;
+  justify-content: center;
+}
+
+.titulo-escribime {
+  font-size: 32px;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 64px;
+  padding-bottom: 9px;
+}
+
+.contenedor-de-formularios {
+  margin: 0 20px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.etiquetas-label {
+  font-family: "Roboto";
+  padding-top: 27px;
+  padding-bottom: 9px;
+}
+.inputs {
+  height: 45px;
+}
+
+.boton {
+  width: 335px;
+  height: 45px;
+  margin-top: 60px;
+  background-color: #ffd953;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (min-width: 769px) {
+  .section-formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .titulo-escribime {
+    font-size: 48px;
+    font-family: "Open Sans", sans-serif;
+    padding-top: 10px;
+    padding-right: 77px;
+  }
+}
+
+@media (min-width: 769px) {
+  .contenedor-titulo-formulario {
+    display: flex;
+    align-items: flex-start;
+    height: 405px;
+  }
+}
+
+/* ----------------------------------------------FOOTER */
+
+.footer {
+  height: 493px;
+  background-color: #dbdbdb;
+}
+
+.logo-footer {
+  width: 110px;
+  height: 75px;
+  margin-top: 53px;
+  padding-left: 20px;
+}
+
+.derechos-reservados {
+  font-family: "Roboto";
+  font-size: 13px;
+  padding-bottom: 85px;
+  padding-left: 20px;
+}
+
+.contenedor-redes {
+  display: flex;
+}
+
+.logo-redes {
+  width: 27px;
+  height: 27px;
+  margin-bottom: 29px;
+  margin-left: 20px;
+}
+
+.texto-redes {
+  font-family: "Roboto", sans-serif;
+  color: #2c2c2c;
+  padding-left: 8px;
+  text-decoration: none;
+}
+
+.texto-redes:hover {
+  color: #fdfa2d;
+}
+
+@media (min-width: 769px) {
+  .footer {
+    height: 346px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 769px) {
+  .logo-footer {
+    width: 112px;
+    height: 103px;
+    margin-top: 98px;
+    margin-left: 80px;
+  }
+}
+
+@media (min-width: 769px) {
+  .derechos-reservados {
+    font-family: "Roboto";
+    font-size: 13px;
+    padding: 0;
+    margin-left: 80px;
+  }
+}
+
+@media (min-width: 769px) {
+  .contenedor-principal-redes {
+    margin-top: 95px;
+    margin-right: 80px;
+  }
+}
+@media (min-width: 1400) {
+  .contenedor-principal-redes {
+    margin-top: 95px;
+    margin-right: 215px;
+  }
+}
