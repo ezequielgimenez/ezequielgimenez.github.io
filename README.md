@@ -1,1 +1,2 @@
-My site -> https://ezequielgimenez.github.io
+https://ezequielgimenez.github.io
+My site developed by me
